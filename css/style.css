@@ -534,3 +534,18 @@ footer p {
     opacity: 1;
     transform: translateY(0);
 }
+
+.criacao {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  color: var(--silver);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.parcelamento {
+  font-size: 0.8rem;
+  color: var(--text-soft);
+  opacity: 0.8;
+}
