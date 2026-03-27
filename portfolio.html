@@ -27,7 +27,13 @@
           <img src="img/logo.png" alt="Logo Vexa" />
         </a>
 
-        <nav>
+        <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav id="menu">
           <ul>
             <li><a href="index.html">Início</a></li>
             <li><a href="#projetos">Projetos</a></li>
@@ -51,7 +57,7 @@
     <section class="hero">
       <div class="container hero-content fade-in">
         <span class="hero-badge">Portfólio Vexa</span>
-        <h1>SITES DESENVOLVIDOS PARA MARCAS QUE QUEREM CRESCER NO DIGITAL</h1>
+        <h1>Sites desenvolvidos para marcas que querem crescer no digital</h1>
         <p>
           Conheça alguns projetos criados pela Vexa com foco em presença
           digital, apresentação profissional e geração de oportunidades para
@@ -59,6 +65,7 @@
         </p>
 
         <div class="hero-buttons">
+          <a href="#projetos" class="btn-primary">Ver projetos</a>
           <a
             href="https://wa.me/5513988393407?text=Olá,%20quero%20um%20site%20para%20o%20meu%20negócio!"
             class="btn-secondary"
@@ -104,7 +111,7 @@
         <div class="projetos-grid">
           <!-- Projeto 1 -->
           <article class="projeto-card fade-in">
-            <div class="projeto-thumb">
+            <div class="projeto-thumb thumb-academia">
               <div class="thumb-overlay">Projeto 01</div>
             </div>
 
@@ -132,7 +139,7 @@
 
           <!-- Projeto 2 -->
           <article class="projeto-card fade-in">
-            <div class="projeto-thumb">
+            <div class="projeto-thumb thumb-vexa">
               <div class="thumb-overlay">Projeto 02</div>
             </div>
 
@@ -161,7 +168,7 @@
 
           <!-- Projeto 3 -->
           <article class="projeto-card fade-in">
-            <div class="projeto-thumb">
+            <div class="projeto-thumb thumb-yelo">
               <div class="thumb-overlay">Projeto 03</div>
             </div>
 
@@ -170,17 +177,18 @@
               <h3>Yelo Cursos Profissionalizantes</h3>
               <p>
                 Site institucional voltado para uma escola de cursos, com foco
-                em credibilidade, apresentação dos cursos e aumento de matrículas.
+                em credibilidade, apresentação dos cursos e aumento de
+                matrículas.
               </p>
 
               <ul class="projeto-lista">
                 <li>Visual mais profissional e convidativo</li>
-                <li>Estrutura pensada para apresentar cursos</li>
-                <li>Experiência amigável no celular</li>
+                <li>Estrutura adaptada para celular</li>
+                <li>Foco em conversão de alunos</li>
               </ul>
 
               <div class="projeto-meta">
-                <span><strong>Objetivo:</strong> captação de alunos</span>
+                <span><strong>Objetivo:</strong> captação de matrículas</span>
               </div>
 
               <a href="#" class="btn-projeto" target="_blank">Ver projeto</a>
@@ -194,39 +202,35 @@
     <section id="processo" class="processo">
       <div class="container">
         <div class="section-top fade-in">
-          <span class="section-label">Como trabalhamos</span>
-          <h2>Um processo simples e eficiente</h2>
-          <p>
-            A ideia é tirar o projeto do papel com clareza, organização e foco
-            no que realmente faz sentido para o negócio.
-          </p>
+          <span class="section-label">Processo</span>
+          <h2>Como a Vexa desenvolve cada projeto</h2>
         </div>
 
         <div class="processo-grid">
           <div class="processo-card fade-in">
-            <div class="numero">01</div>
+            <span>01</span>
             <h3>Entendimento do negócio</h3>
             <p>
-              Primeiro entendemos o que sua empresa faz, quem é seu público e
-              qual resultado o site precisa gerar.
+              Primeiro entendemos o objetivo da empresa, o público e o estilo
+              ideal para o site.
             </p>
           </div>
 
           <div class="processo-card fade-in">
-            <div class="numero">02</div>
+            <span>02</span>
             <h3>Criação do layout</h3>
             <p>
-              Desenvolvemos um site visualmente forte, organizado e pensado para
-              passar profissionalismo.
+              Desenvolvemos uma estrutura visual moderna, organizada e alinhada
+              com a identidade da marca.
             </p>
           </div>
 
           <div class="processo-card fade-in">
-            <div class="numero">03</div>
-            <h3>Entrega e publicação</h3>
+            <span>03</span>
+            <h3>Entrega com foco em resultado</h3>
             <p>
-              O site é ajustado, publicado e preparado para sua empresa começar
-              a ter presença digital de verdade.
+              O site é pensado para funcionar bem, causar boa impressão e
+              facilitar o contato com futuros clientes.
             </p>
           </div>
         </div>

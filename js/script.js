@@ -39,6 +39,33 @@ function smoothScroll() {
 document.addEventListener('DOMContentLoaded', function() {
     fadeInOnScroll();
     smoothScroll();
+
+    const menuToggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    if (menuToggle && menu) {
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+        });
+
+        document.querySelectorAll('#menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                menu.classList.remove('active');
+            });
+        });
+
+        document.addEventListener('click', (e) => {
+            const clickedOutsideMenu = !menu.contains(e.target);
+            const clickedOutsideToggle = !menuToggle.contains(e.target);
+
+            if (menu.classList.contains('active') && clickedOutsideMenu && clickedOutsideToggle) {
+                menuToggle.classList.remove('active');
+                menu.classList.remove('active');
+            }
+        });
+    }
 });
 
 // Função para animar header conforme o scroll
