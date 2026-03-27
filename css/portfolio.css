@@ -345,6 +345,11 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    transition: transform 0.4s ease;
+}
+
+.projeto-card:hover .projeto-thumb {
+    transform: scale(1.05);
 }
 
 .projeto-thumb::after {
