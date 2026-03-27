@@ -2,16 +2,22 @@
 
 // Função para animação de fade-in ao rolar
 function fadeInOnScroll() {
-    const elements = document.querySelectorAll('.servico, .plano, .depoimento');
+    const elements = document.querySelectorAll('.fade-in, .servico, .plano, .depoimento');
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in', 'visible');
+                entry.target.classList.add('visible');
             }
         });
-    }, { threshold: 0.1 });
+    }, {
+        threshold: 0.12
+    });
 
-    elements.forEach(el => observer.observe(el));
+    elements.forEach(el => {
+        el.classList.add('fade-in');
+        observer.observe(el);
+    });
 }
 
 // Função para scroll suave nos links do menu
@@ -37,10 +43,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Função para animar header conforme o scroll
 window.addEventListener('scroll', function() {
-    let scrollY = window.scrollY;
+    const scrollY = window.scrollY;
     const header = document.querySelector('header');
+
+    if (!header) return;
+
     if (scrollY > 10) {
-        let translateY = Math.min(scrollY - 50, header.offsetHeight); // subir até a altura do header
+        const translateY = Math.min(scrollY - 50, header.offsetHeight);
         header.style.transform = `translateY(-${translateY}px)`;
     } else {
         header.style.transform = 'translateY(0)';
