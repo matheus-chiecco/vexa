@@ -611,7 +611,7 @@ footer p {
 
 @media (max-width: 768px) {
     body {
-        padding-bottom: 90px;
+        padding-bottom: 0px;
     }
 
     header {
