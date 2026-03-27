@@ -241,14 +241,12 @@ nav ul li a:hover {
 .btn-secondary {
     padding: 15px 30px;
     color: var(--text);
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    background: rgba(255, 255, 255, 0.03);
+    background: linear-gradient(90deg, var(--primary) 0%, var(--primary-light) 100%);
 }
 
 .btn-secondary:hover {
     transform: translateY(-3px);
-    border-color: rgba(77, 178, 255, 0.35);
-    background: rgba(255, 255, 255, 0.06);
+    box-shadow: 0 16px 32px rgba(10, 132, 255, 0.35);
 }
 
 /* Seções */
